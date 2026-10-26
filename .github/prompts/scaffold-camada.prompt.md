@@ -22,3 +22,19 @@ Requisitos:
 - Uploads gravados no filesystem local via multer com diskStorage.
 - Metadados em memória nesta fase.
 - Trate erros nos limites do sistema.
+
+# Scaffold de camada de frontend
+
+Crie a estrutura completa de uma camada para o recurso `${input:recurso:nome do recurso}` no frontend seguindo a arquitetura do projeto.
+
+Gere os arquivos em `frontend/src`:
+
+1. `components/${input:recurso}.vue` - componente principal do recurso.
+2. `services/${input:recurso}.service.js` - responsável por chamadas HTTP ao backend.
+3. `store/${input:recurso}.store.js` - gerencia o estado do recurso no Vuex (ou outro gerenciador de estado utilizado).
+
+Requisitos:
+
+- Respeite o fluxo `components -> services -> store`.
+- Trate erros de requisição HTTP.
+- Mantenha a consistência com o estilo e padrões do projeto frontend.
